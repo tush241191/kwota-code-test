@@ -1,15 +1,4 @@
-export interface IProject {
-  title: string;
-  description: string;
-  material: {
-    name: string;
-    color: string;
-  };
-  standard: string;
-  price: number;
-  credit_balance: number;
-  image: string;
-}
+import { IProject } from '../../../types';
 
 const Project: React.FC<IProject> = (props: IProject) => {
   const {
