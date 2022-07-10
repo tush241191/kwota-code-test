@@ -12,6 +12,12 @@ module.exports = {
       lg: '1200px',
       xl: '1536px',
     },
+    extend: {
+      fontFamily: {
+        helvetica: ['Helvetica'],
+        inter: ['Inter'],
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),

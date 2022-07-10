@@ -33,7 +33,7 @@ const Project: React.FC<IProject> = (props: IProject) => {
                 {standard != '' && (
                   <button
                     type='button'
-                    className='w-fit inline-flex items-center h-9 px-6 py-2 shadow-sm text-xs font-bold rounded text-black bg-[#CBD5E0]/75 focus:outline-none focus:ring-0'
+                    className='w-fit inline-flex items-center h-9 px-6 py-2 shadow-sm text-xs font-bold font-inter rounded text-black bg-[#CBD5E0]/75 focus:outline-none focus:ring-0'
                   >
                     {standard}
                   </button>
@@ -41,7 +41,7 @@ const Project: React.FC<IProject> = (props: IProject) => {
                 <button
                   type='button'
                   style={{ backgroundColor: material.color }}
-                  className={`w-fit inline-flex items-center h-9 px-6 py-2 shadow-sm text-xs font-bold rounded text-black focus:outline-none focus:ring-0`}
+                  className={`w-fit inline-flex items-center h-9 px-6 py-2 shadow-sm text-xs font-bold font-inter rounded text-black focus:outline-none focus:ring-0`}
                 >
                   {material.name}
                 </button>
@@ -52,10 +52,10 @@ const Project: React.FC<IProject> = (props: IProject) => {
         <div className='flex-1 bg-white p-4 flex justify-between'>
           <div className='flex items-center'>
             <div className='ml-3 space-y-1'>
-              <p className='text-lg font-normal text-gray-900'>
+              <p className='text-lg font-normal font-helvetica text-gray-900'>
                 <span className='hover:underline'>{price}€/tonne</span>
               </p>
-              <div className='flex space-x-1 text-xs font-normal text-gray-500'>
+              <div className='flex space-x-1 text-xs font-normal font-helvetica text-gray-500'>
                 <span>{credit_balance} carbon credits in stock</span>
               </div>
             </div>
@@ -88,12 +88,12 @@ const Project: React.FC<IProject> = (props: IProject) => {
         <div className='project-description absolute inset-x-0 bottom-0 h-full bg-[#353535]/80'>
           <div className='h-full flex items-center justify-center'>
             <div className='px-12 flex flex-col space-y-4 text-center'>
-              <p className='text-white font-bold text-sm line-clamp-4'>
+              <p className='text-white font-bold font-inter text-sm line-clamp-4'>
                 {description}
               </p>
               <button
                 type='button'
-                className='w-fit mx-auto h-12 inline-flex items-center px-8 py-2 border border-[#07A5E2] shadow-sm text-xs font-bold rounded-lg text-[#07A5E2] bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                className='w-fit mx-auto h-12 inline-flex items-center px-8 py-2 border border-[#07A5E2] shadow-sm text-xs font-bold font-inter rounded-lg text-[#07A5E2] bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
               >
                 Read about the project
               </button>
@@ -102,7 +102,7 @@ const Project: React.FC<IProject> = (props: IProject) => {
         </div>
       </div>
       <div>
-        <div className='text-lg leading-6 font-bold space-y-1'>
+        <div className='text-lg leading-6 font-bold font-inter space-y-1'>
           <h3>{title}</h3>
         </div>
       </div>
