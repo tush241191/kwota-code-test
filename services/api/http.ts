@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const http = axios.create({
-  baseURL: `api/`,
+  baseURL: process.env.API_URL,
   headers: {
     'Access-Control-Allow-Origin': '*',
   },

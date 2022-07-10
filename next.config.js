@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     domains: ['i.pravatar.cc'],
   },
+  env: {
+    API_URL: 'api/',
+  },
 };
 
 module.exports = nextConfig;
