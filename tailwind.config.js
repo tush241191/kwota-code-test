@@ -3,7 +3,6 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
-  // Ensure these match with .storybook/preview.js
   theme: {
     screens: {
       xs: '375px',
